@@ -1,0 +1,20 @@
+{
+    "recommendations": [
+        "vue.volar",
+        "antfu.unocss",
+        "zjffun.snippetsmanager",
+        "alefragnani.project-manager",
+        "pkief.material-icon-theme",
+        "ritwickdey.liveserver",
+        "kisstkondoros.vscode-gutter-preview",
+        "antfu.iconify",
+        "lokalise.i18n-ally",
+        "bradgashler.htmltagwrap",
+        "dracula-theme.theme-dracula",
+        "streetsidesoftware.code-spell-checker",
+        "streetsidesoftware.code-spell-checker-portuguese-brazilian",
+        "aaron-bond.better-comments",
+        "blueglassblock.better-json5",
+        "redwan-hossain.auto-rename-tag-clone"
+    ]
+}
