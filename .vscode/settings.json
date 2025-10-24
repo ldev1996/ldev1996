@@ -2,7 +2,6 @@
     // --------------- Explorer Settings ---------------
     "explorer.confirmDragAndDrop": false,
     "explorer.compactFolders": false,
-
     // --------------- File Nesting ---------------
     "explorer.fileNesting.enabled": true,
     "explorer.fileNesting.patterns": {
@@ -11,10 +10,11 @@
         ".gitignore": "*-env.d.ts, .env, .env.example",
         "README.md": "*.md"
     },
-
     // --------------- Editor Display ---------------
     "editor.renderLineHighlight": "gutter",
-    "editor.rulers": [80, 120],
+    "editor.rulers": [
+        110
+    ],
     "editor.minimap.enabled": false,
     "editor.scrollbar.horizontal": "hidden",
     "editor.scrollbar.vertical": "hidden",
@@ -23,28 +23,26 @@
     "editor.fontLigatures": true,
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontSize": 14,
-
     // --------------- Terminal ---------------
     "terminal.integrated.env.windows": {},
     "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
     "terminal.integrated.fontSize": 14,
-
     // --------------- Formatting ---------------
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "prettier.tabWidth": 4,
-    "prettier.jsxSingleQuote": true,
-    "prettier.singleQuote": true,
-    "prettier.vueIndentScriptAndStyle": true,
-    "prettier.singleAttributePerLine": true,
-    "prettier.semi": false,
     "[json5]": {
         "editor.defaultFormatter": "BlueGlassBlock.better-json5"
     },
-
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
     // --------------- Diff & Compare ---------------
     "diffEditor.ignoreTrimWhitespace": false,
-
     // --------------- Workbench Appearance ---------------
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "Dracula Theme Soft",
@@ -52,13 +50,13 @@
     "workbench.tree.indent": 16,
     "workbench.activityBar.location": "hidden",
     "workbench.statusBar.visible": false,
-    "workbench.startupEditor": "terminal",
+    "workbench.startupEditor": "none",
     "window.commandCenter": false,
     "workbench.layoutControl.enabled": false,
     "material-icon-theme.folders.associations": {
         "composables": "nuxt"
     },
-
     // --------------- Spelling ---------------
-    "cSpell.language": "en, pt, ptBR"
+    "cSpell.language": "en, pt, ptBR",
+    "svelte.enable-ts-plugin": true,
 }
