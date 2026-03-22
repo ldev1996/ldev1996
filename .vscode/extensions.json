@@ -10,17 +10,13 @@
         "fill-labs.dependi",
         "dracula-theme.theme-dracula",
         "tamasfe.even-better-toml",
-        "lokalise.i18n-ally",
-        "antfu.iconify",
         "kisstkondoros.vscode-gutter-preview",
         "ritwickdey.liveserver",
-        "pkief.material-icon-theme",
+        "cdfzo.mizu",
         "alefragnani.project-manager",
-        "swellaby.vscode-rust-test-adapter",
         "rust-lang.rust-analyzer",
         "zjffun.snippetsmanager",
         "minecraftcommands.syntax-mcfunction",
-        "ms-vscode.test-adapter-converter",
-        "hbenl.vscode-test-explorer"
+        "a5huynh.vscode-ron"
     ]
 }

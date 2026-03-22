@@ -20,12 +20,12 @@
     "editor.scrollbar.vertical": "hidden",
     "editor.semanticHighlighting.enabled": false,
     "breadcrumbs.enabled": false,
+    "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
     "editor.fontLigatures": true,
-    "editor.fontFamily": "JetBrains Mono",
     "editor.fontSize": 14,
     // --------------- Terminal ---------------
     "terminal.integrated.env.windows": {},
-    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+    "terminal.integrated.fontFamily": "JetBrains Mono",
     "terminal.integrated.fontSize": 14,
     // --------------- Formatting ---------------
     "editor.formatOnSave": true,
@@ -43,8 +43,6 @@
     },
     // --------------- Diff & Compare ---------------
     "diffEditor.ignoreTrimWhitespace": false,
-    // --------------- Workbench Appearance ---------------
-    "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "Dracula Theme Soft",
     "workbench.editor.labelFormat": "short",
     "workbench.tree.indent": 16,
@@ -53,10 +51,13 @@
     "workbench.startupEditor": "none",
     "window.commandCenter": false,
     "workbench.layoutControl.enabled": false,
-    "material-icon-theme.folders.associations": {
-        "composables": "nuxt"
-    },
+    "workbench.iconTheme": "mizu",
+    // --------------- Linting ----------------
+    "biome.suggestInstallingGlobally": false,
+    "biome.requireConfiguration": true,
     // --------------- Spelling ---------------
     "cSpell.language": "en, pt, ptBR",
-    "svelte.enable-ts-plugin": true,
+    "cSpell.userWords": [
+        "stackable"
+    ],
 }
