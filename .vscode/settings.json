@@ -1,8 +1,32 @@
 {
-    // --------------- Explorer Settings ---------------
-    "explorer.confirmDragAndDrop": false,
+    // --- Workbench / UI Appearance ---
+    "workbench.colorTheme": "Dracula Theme Soft",
+    "workbench.iconTheme": "mizu",
+    "workbench.activityBar.location": "hidden",
+    "workbench.statusBar.visible": false,
+    "workbench.startupEditor": "none",
+    "workbench.layoutControl.enabled": false,
+    "workbench.editor.labelFormat": "short",
+    "workbench.tree.indent": 16,
+    "window.commandCenter": false,
+    "breadcrumbs.enabled": false,
+    // --- Editor Configuration ---
+    "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 14,
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "editor.renderLineHighlight": "gutter",
+    "editor.rulers": [
+        110
+    ],
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "editor.semanticHighlighting.enabled": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    // --- Explorer & File Management ---
     "explorer.compactFolders": false,
-    // --------------- File Nesting ---------------
+    "explorer.confirmDragAndDrop": false,
     "explorer.fileNesting.enabled": true,
     "explorer.fileNesting.patterns": {
         "package.json": "package-lock.json, yarn.lock, pnpm-*.yaml, bun.lockb, *config.ts, *config.js, *config.json, *config.yaml",
@@ -10,54 +34,25 @@
         ".gitignore": "*-env.d.ts, .env, .env.example",
         "README.md": "*.md"
     },
-    // --------------- Editor Display ---------------
-    "editor.renderLineHighlight": "gutter",
-    "editor.rulers": [
-        110
-    ],
-    "editor.minimap.enabled": false,
-    "editor.scrollbar.horizontal": "hidden",
-    "editor.scrollbar.vertical": "hidden",
-    "editor.semanticHighlighting.enabled": false,
-    "breadcrumbs.enabled": false,
-    "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 14,
-    // --------------- Terminal ---------------
-    "terminal.integrated.env.windows": {},
+    // --- Terminal ---
     "terminal.integrated.fontFamily": "JetBrains Mono",
     "terminal.integrated.fontSize": 14,
-    // --------------- Formatting ---------------
-    "editor.formatOnSave": true,
-    "[json5]": {
-        "editor.defaultFormatter": "BlueGlassBlock.better-json5"
+    "terminal.integrated.env.windows": {},
+    // --- Extensions & Tools ---
+    "biome.suggestInstallingGlobally": false,
+    "biome.requireConfiguration": true,
+    "cSpell.language": "en, pt, ptBR",
+    // --- Language Specific Settings ---
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
+    "[json5]": {
+        "editor.defaultFormatter": "BlueGlassBlock.better-json5"
+    },
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    // --------------- Diff & Compare ---------------
-    "diffEditor.ignoreTrimWhitespace": false,
-    "workbench.colorTheme": "Dracula Theme Soft",
-    "workbench.editor.labelFormat": "short",
-    "workbench.tree.indent": 16,
-    "workbench.activityBar.location": "hidden",
-    "workbench.statusBar.visible": false,
-    "workbench.startupEditor": "none",
-    "window.commandCenter": false,
-    "workbench.layoutControl.enabled": false,
-    "workbench.iconTheme": "mizu",
-    // --------------- Linting ----------------
-    "biome.suggestInstallingGlobally": false,
-    "biome.requireConfiguration": true,
-    // --------------- Spelling ---------------
-    "cSpell.language": "en, pt, ptBR",
-    "cSpell.userWords": [
-        "stackable"
-    ],
+    }
 }
