@@ -1,5 +1,5 @@
 {
-    // --- Workbench / UI Appearance ---
+    // --- Interface & Window ---
     "workbench.colorTheme": "Dracula Theme Soft",
     "workbench.iconTheme": "mizu",
     "workbench.activityBar.location": "hidden",
@@ -10,41 +10,65 @@
     "workbench.tree.indent": 16,
     "window.commandCenter": false,
     "breadcrumbs.enabled": false,
-    // --- Editor Configuration ---
-    "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 14,
-    "editor.formatOnSave": true,
+    // --- Editor View & Layout ---
     "editor.minimap.enabled": false,
-    "editor.renderLineHighlight": "gutter",
-    "editor.rulers": [
-        110
-    ],
     "editor.scrollbar.horizontal": "hidden",
     "editor.scrollbar.vertical": "hidden",
+    "editor.renderLineHighlight": "gutter",
+    "editor.stickyScroll.enabled": false,
+    "editor.rulers": [
+        80,
+        110
+    ],
+    // --- Typography & Behavior ---
+    "editor.fontFamily": "'JetBrainsMono NFM', 'JetBrains Mono', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 14,
+    "editor.lineHeight": 1.6,
     "editor.semanticHighlighting.enabled": false,
     "diffEditor.ignoreTrimWhitespace": false,
-    // --- Explorer & File Management ---
+    // --- Automation & Saving ---
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.ruff": "explicit",
+        "source.organizeImports.ruff": "explicit"
+    },
+    // --- Explorer & File Nesting ---
     "explorer.compactFolders": false,
     "explorer.confirmDragAndDrop": false,
     "explorer.fileNesting.enabled": true,
     "explorer.fileNesting.patterns": {
-        "package.json": "package-lock.json, yarn.lock, pnpm-*.yaml, bun.lockb, *config.ts, *config.js, *config.json, *config.yaml",
+        // JS / TS / Node
+        "package.json": "package-lock.json, yarn.lock, pnpm-*.yaml, bun.lockb, *config.ts, *config.js, *config.json, *config.yaml, tsconfig.json, .eslint*",
+        "*.vue": "$(capture).d.ts, $(capture).test.ts, $(capture).test.js, $(capture).spec.ts, $(capture).spec.js",
+        "*.ts": "$(capture).js, $(capture).d.ts, $(capture).test.ts, $(capture).spec.ts",
+        "*.js": "$(capture).js.map, $(capture).test.js, $(capture).spec.js",
         "*.html": "$(capture).*",
-        ".gitignore": "*-env.d.ts, .env, .env.example",
-        "README.md": "*.md"
+        // Python
+        "pyproject.toml": "uv.lock, ruff.toml, .ruff_cache, .pdm.lock, poetry.lock, .python-version",
+        "*.py": "$(capture).pyc, __pycache__",
+        // Rust
+        "Cargo.toml": "Cargo.lock, rust-toolchain, rustfmt.toml, .rustfmt.toml, clippy.toml, tauri.conf.json, cross.toml",
+        // Generic
+        ".gitignore": "*-env.d.ts, .env, .env.*, .gitattributes, .gitmodules, .mailmap",
+        "README.md": "*.md, LICENSE, CHANGELOG*"
     },
     // --- Terminal ---
     "terminal.integrated.fontFamily": "JetBrains Mono",
     "terminal.integrated.fontSize": 14,
-    "terminal.integrated.env.windows": {},
-    // --- Extensions & Tools ---
-    "biome.suggestInstallingGlobally": false,
-    "biome.requireConfiguration": true,
-    "cSpell.language": "en, pt, ptBR",
-    // --- Language Specific Settings ---
+    "terminal.integrated.cursorStyle": "line",
+    // --- Language Settings ---
     "[javascript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff"
     },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
@@ -54,5 +78,26 @@
     },
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
-    }
+    },
+    "[renpy]": {
+        "editor.wordWrap": "on"
+    },
+    // --- Extension: Mizu Icons ---
+    "mizu.customIconAssociations": {
+        "core": [
+            "/domain"
+        ],
+        "service": [
+            "/infrastructure",
+            "/infra"
+        ],
+        "theme": [
+            "/ui"
+        ]
+    },
+    // --- Extension: Rust Analyzer ---
+    "rust-analyzer.check.command": "clippy",
+    "rust-analyzer.hover.actions.enable": true,
+    // --- Privacy & Telemetry ---
+    "redhat.telemetry.enabled": false
 }
