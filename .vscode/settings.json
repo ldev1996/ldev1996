@@ -1,6 +1,6 @@
 {
     // --- Interface & Window ---
-    "workbench.colorTheme": "Dracula Theme Soft",
+    "workbench.colorTheme": "Dracula Theme",
     "workbench.iconTheme": "mizu",
     "workbench.activityBar.location": "hidden",
     "workbench.statusBar.visible": false,
